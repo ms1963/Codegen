@@ -1,4 +1,4 @@
-# Self-Extending AI System
+# Codegen - Self-Extending AI System
 
 An LLM agent that generates its own Python tools on demand using the
 **Model Context Protocol (MCP)**. The agent can create, register, invoke,
@@ -91,13 +91,13 @@ docker run -it \
   -e LLM_BASE_URL=http://host.docker.internal:11434/v1 \
   -e LLM_MODEL=qwen2.5:14b \
   -v$(pwd)/data:/data \
-  self-extending-ai
+  codegen
 
 # Run single query
 docker run --rm \
   -e LLM_BASE_URL=http://host.docker.internal:11434/v1 \
   -v $(pwd)/data:/data \
-  self-extending-ai --query "What is the square root of 144?"
+  codegen --query "What is the square root of 144?"
 ```
 
 ## Environment Variables
