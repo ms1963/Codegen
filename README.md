@@ -38,7 +38,7 @@ inspect, and remove tools at runtime — all within a single process.
 ```bash
 # 1. Clone the repository
 git clone https://github.com/ms1963/Codegen.git
-cd self-extending-ai
+cd codegen
 
 # 2. Create and activate a virtual environment
 python -m venv .venv
