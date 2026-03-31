@@ -1,0 +1,28 @@
+# =============================================================================
+# Self-Extending AI System — Python Dependencies
+# Requires Python >= 3.11
+# =============================================================================
+
+# ── MCP (Model Context Protocol) SDK ─────────────────────────────────────────
+# Low-level MCP server + client + types
+mcp>=1.0.0,<2.0.0
+
+# ── OpenAI-compatible async client ───────────────────────────────────────────
+# Works with Ollama, LM Studio, OpenAI, Azure OpenAI, etc.
+openai>=1.30.0,<2.0.0
+
+# ── Async I/O backend ────────────────────────────────────────────────────────
+# anyio is the async backend used by the MCP SDK and for memory streams.
+# The MCP SDK pins to anyio >=4.0, so we follow suit.
+anyio>=4.0.0,<5.0.0
+
+# ── HTTP client for generated tools ──────────────────────────────────────────
+# Optional: generated tools may use `requests` for HTTP calls.
+# The dynamic_loader gracefully omits it from the safe namespace if absent.
+requests>=2.31.0,<3.0.0
+
+# ── The following are all stdlib in Python 3.11+ and need no installation: ───
+# asyncio, ast, base64, collections, dataclasses, datetime, decimal,
+# fractions, functools, hashlib, importlib, inspect, itertools, json,
+# logging, math, pathlib, random, re, statistics, string, sys, time,
+# types, typing, urllib.parse
